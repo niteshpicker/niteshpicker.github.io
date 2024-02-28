@@ -888,8 +888,8 @@ section {
 }
 
 .features ul {
-  list-style: none;
-  padding: 0;
+  /* list-style: none;
+  padding: 0; */
 }
 
 .features ul li {
@@ -1505,7 +1505,7 @@ section {
   color: #68a4c4;
   border-radius: 50%;
   padding: 8px;
-  border: 2px dotted #a2cce3;
+  border: 2px dotted red;
 }
 
 .contact .info-box h3 {
@@ -2522,5 +2522,202 @@ section {
     font-size: 30px;
   }
 }
+
+/*-----------------------------------*/
+
+
+
+
+#hero2 {
+  width: 100%;
+  height: 120vh;
+  overflow: hidden;
+  position: relative;
+}
+
+#hero2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 130%;
+  height: 95%;
+  background:url("../img/Contactuss.jpg") center top no-repeat;
+  z-index: 0;
+
+  transform: translateX(-50%) rotate(0deg);
+}
+
+#hero2 .carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero2 h2 {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#hero2 p {
+  width: 80%;
+  animation-delay: 0.4s;
+  margin: 0 auto 30px auto;
+  color: #fff;
+}
+
+#hero2 .carousel-control-prev,
+#hero2 .carousel-control-next {
+  width: 10%;
+}
+
+#hero2 .carousel-control-next-icon,
+#hero2 .carousel-control-prev-icon {
+  background: none;
+  font-size: 48px;
+  line-height: 1;
+  width: auto;
+  height: auto;
+}
+
+#hero2 .btn-get-started {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 10px;
+  color: #fff;
+  animation-delay: 0.8s;
+  border: 2px solid #68a4c4;
+}
+
+#hero2 .btn-get-started:hover {
+  background: #68a4c4;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (min-width: 1024px) {
+  #hero2 p {
+    width: 60%;
+  }
+
+  #hero2 .carousel-control-prev,
+  #hero2 .carousel-control-next {
+    width: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero2::after {
+    width: 180%;
+    height: 95%;
+
+    transform: translateX(-50%) rotate(0deg);
+  }
+}
+
+@media (max-width: 575px) {
+  #hero2 h2 {
+    font-size: 30px;
+  }
+
+  #hero2::after {
+    left: 40%;
+    top: 0;
+    width: 200%;
+    height: 95%;
+
+    transform: translateX(-50%) rotate(0deg);
+  }
+
+  #hero2::before {
+    left: 50%;
+    top: 0;
+    width: 200%;
+    height: 94%;
+
+    transform: translateX(-50%) translateY(20px) rotate(4deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Hero No Slider Section
+--------------------------------------------------------------*/
+#hero2-no-slider {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+#hero2-no-slider::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+      to right,
+      rgba(30, 67, 86, 0.8),
+      rgba(30, 67, 86, 0.6)
+    ),
+    url("../img/teamwork2.jpg") center top no-repeat;
+}
+
+#hero2-no-slider h2 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#hero2-no-slider p {
+  color: #fff;
+}
+
+#hero2-no-slider .btn-get-started {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 10px;
+  color: #fff;
+  animation-delay: 0.8s;
+  border: 2px solid #68a4c4;
+}
+
+#hero2-no-slider .btn-get-started:hover {
+  background: #68a4c4;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 575px) {
+  #hero2-no-slider h2 {
+    font-size: 30px;
+  }
+}
+
 
 
